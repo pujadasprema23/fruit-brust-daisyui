@@ -27,12 +27,17 @@
             clifford: '#da373d',
             'btn-color': '#F85559',
           }
+         ,
+          backgroundImage: {
+        'team-bg-img': "url('/images/team.png')",
+         }
         }
       }
-    }
+      }
+    
   </script>
   <!-- card 1 -->
-  <!-- Put this part before </body> -->
+  
 <input type="checkbox" id="my_modal_7" class="modal-toggle" />
 <div class="modal" role="dialog">
   <!-- card -->
@@ -66,7 +71,7 @@
 </div>
 </div>
   <!-- card 2 -->
-  <!-- Put this part before </body> -->
+
 <input type="checkbox" id="my_modal_8" class="modal-toggle" />
 <div class="modal" role="dialog">
   <!-- card -->
@@ -101,7 +106,7 @@
 </div>
 </div>
   <!-- card 3 -->
-  <!-- Put this part before </body> -->
+ 
 <input type="checkbox" id="my_modal_9" class="modal-toggle" />
 <div class="modal" role="dialog">
   <!-- card -->
@@ -136,7 +141,7 @@
 </div>
 </div>
   <!-- card 4 -->
-  <!-- Put this part before </body> -->
+  
 <input type="checkbox" id="my_modal_10" class="modal-toggle" />
 <div class="modal" role="dialog">
   <!-- card -->
@@ -177,7 +182,7 @@
        <!-- navbar section -->
         <nav class="my-10">
           <!-- container -->
-           <div class="flex justify-between items-center p-6 lg:bg-[#F85559] rounded-full">
+           <div class="flex justify-around lg:justify-evenly items-center p-6 lg:bg-[#F85559] rounded-full">
             <!-- navbar start -->
               <div class="hidden lg:block">
                  <ul class="flex gap-10 text-white p-4">
@@ -242,7 +247,7 @@
            
         </nav>
         <!-- slider or carousel section -->
-           <section>
+           <section class="">
             <div class="carousel lg:w-full">
   <div id="slide1" class="carousel-item relative lg:w-full brightness-50">
     <img
@@ -288,7 +293,7 @@
           <button class="btn border-none bg-btn-color text-white">Shop Now</button>
       </div>
       <!-- bottom container -->
-       <div class="flex justify-center items-center gap-14 w-2/3 p-6 bg-white rounded-lg mx-auto relative -top-28 drop-shadow-md invisible lg:visible">
+       <div class="hidden lg:flex justify-center items-center gap-14 w-2/3 p-6 bg-white rounded-lg mx-auto relative -top-28 drop-shadow-md invisible lg:visible">
          <!-- grapes -->
            <div class="">
             <img src="images/fruit1.png" alt="">
@@ -319,7 +324,7 @@
     </header>
     <main class="container mx-auto">
        <!-- deal of the day section -->
-        <section class="my-24">
+        <section class="p-5 lg:my-24">
           <!-- container -->
              <div class="flex flex-col lg:flex-row justify-between items-center space-y-3">
               <!-- content -->
@@ -358,7 +363,7 @@
                  </div>
              </div>
              <!-- cards container -->
-              <div class="my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div class="px-10 my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- cards 1 -->
                  <div class="card bg-base-100 border-2 border-inherit shadow-xl">
   <figure class="px-10 pt-10">
@@ -491,17 +496,18 @@
              </div>
         </section>
         <!-- meet the team section -->
-         <section class="my-24 relative">
-          <!-- image -->
-           <div class="brightness-50">
-             <img src="images/team.png" alt="">
-           </div>
-         <div class="absolute top-14 left-32">
-            <h1 class="text-5xl font-bold text-center mb-9 text-white">Meet the team section</h1>
-          <p class="text-center w-2/3 mx-auto text-white">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+         <section class="my-24 p-5">
+         <!-- image -->
+          <div class="bg-gradient-to-r from-[#334155] to-[#374151] relative">
+            <img class="object-cover absolute mix-blend-overlay w-full h-full" src="images/team.png" alt="">
+            <!-- contents -->
+             <div>
+           <div class="p-10">
+            <h1 class="text-2xl lg:text-5xl font-bold text-center mb-3 lg:mb-9 text-white">Meet the team</h1>
+          <p class="text-center w-72 lg:w-2/3 mx-auto text-white">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
          </div>
           <!-- team container -->
-           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 absolute top-56 left-52">
+           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
               <!-- first team -->
                 <div class="card">
   <figure class="px-10 pt-10">
@@ -575,68 +581,75 @@
   </div>
 </div>
            </div>
+         </div>
+          </div>
+        
          </section>
          <!-- why choose us section -->
-          <section class="my-24 relative">
+          <section class="my-24">
               <h1 class="text-2xl lg:text-5xl font-bold text-center mb-9">Why Choose Us</h1>
-          <p class="text-center w-1/2 mx-auto">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          <p class="text-center w-80 lg:w-1/2 mx-auto">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
           <!-- content and image container  -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-10 p-10 lg:p-0">
+              <!-- image -->
+               <div class="block lg:hidden">
+                   <img src="images/whychoose1.png" alt="">
+                </div>
               <!-- left-side content -->
               <div class="space-y-12">
                  <!-- left side 1 -->
-               <div class="flex lg:flex-row gap-3 items-center">
+               <div class="flex flex-col lg:flex-row gap-3 items-center">
                  <i class="fa-solid fa-users bg-[#cbd5e1] rounded-full p-3"></i>
                  <div>
-                  <h4 class="text-xl font-bold mb-3"><span class="border-b border-slate-700">Dedicated</span> Team</h4>
-                  <p class="text-[#121212]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  <h4 class="text-xl font-bold mb-3 text-center lg:text-left"><span class="border-b border-slate-700">Dedicated</span> Team</h4>
+                  <p class="text-[#121212] text-center lg:text-left">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                  </div>
                </div>
                <!-- left side 2 -->
-               <div class="flex gap-3 items-center">
+               <div class="flex flex-col lg:flex-row gap-3 items-center">
                  <i class="fa-regular fa-heart bg-[#cbd5e1] rounded-full p-3"></i>
                  <div>
-                  <h4 class="text-xl font-bold"><span class="border-b border-slate-700">Fresh is</span> Best</h4>
-                  <p class="text-[#121212]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  <h4 class="text-xl font-bold mb-3 text-center lg:text-left"><span class="border-b border-slate-700">Fresh is</span> Best</h4>
+                  <p class="text-[#121212] text-center lg:text-left">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                  </div>
                </div>
                <!-- left side 3 -->
-               <div class="flex gap-3 items-center">
+               <div class="flex flex-col lg:flex-row gap-3 items-center">
                  <i class="fa-solid fa-gift bg-[#cbd5e1] rounded-full p-3"></i>
                  <div>
-                  <h4 class="text-xl font-bold"><span class="border-b border-slate-700">Gift</span> Certificates</h4>
-                  <p class="text-[#121212]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  <h4 class="text-xl font-bold mb-3 text-center lg:text-left"><span class="border-b border-slate-700">Gift</span> Certificates</h4>
+                  <p class="text-[#121212] text-center lg:text-left">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                  </div>
                </div>
               </div>
                <!-- image -->
-                <div>
+                <div class="hidden lg:block">
                    <img src="images/whychoose1.png" alt="">
                 </div>
                 <!-- right side content  -->
                  <div class="space-y-12">
                      <!-- right side 1 -->
-               <div class="flex flex-row-reverse gap-3 items-center">
+               <div class="flex flex-col lg:flex-row-reverse gap-3 items-center">
                  <i class="fa-solid fa-apple-whole bg-[#cbd5e1] rounded-full p-3"></i>
                  <div>
-                  <h4 class="text-xl font-bold text-end">Integrated <span class="border-b border-slate-700">Supplier</span> </h4>
-                  <p class="text-[#121212]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  <h4 class="text-xl font-bold mb-3 text-center lg:text-end ">Integrated <span class="border-b border-slate-700">Supplier</span> </h4>
+                  <p class="text-[#121212] text-center lg:text-end">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                  </div>
                </div>
                <!-- right side 2 -->
-               <div class="flex flex-row-reverse gap-3 items-center">
+               <div class="flex flex-col lg:flex-row-reverse gap-3 items-center">
                  <i class="fa-solid fa-ice-cream bg-[#cbd5e1] rounded-full p-3"></i>
                  <div>
-                  <h4 class="text-xl font-bold text-end">Sustainable<span class="border-b border-slate-700"> Practice</span> </h4>
-                  <p class="text-[#121212]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  <h4 class="text-xl font-bold mb-3 text-center lg:text-end">Sustainable<span class="border-b border-slate-700"> Practice</span> </h4>
+                  <p class="text-[#121212] text-center lg:text-end">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                  </div>
                </div>
                <!-- right side 3 -->
-               <div class="flex flex-row-reverse gap-3 items-center">
+               <div class="flex flex-col lg:flex-row-reverse gap-3 items-center">
                  <i class="fa-regular fa-thumbs-up bg-[#cbd5e1] rounded-full p-3"></i>
                  <div>
-                  <h4 class="text-xl font-bold text-end">The <span class="border-b border-slate-700">Benefits Only</span> </h4>
-                  <p class="text-[#121212]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  <h4 class="text-xl font-bold mb-3 text-center  lg:text-end">The <span class="border-b border-slate-700">Benefits Only</span> </h4>
+                  <p class="text-[#121212] text-center lg:text-end">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                  </div>
                </div>
                  </div>
@@ -648,7 +661,7 @@
     <img src="images/logo.png" alt="">
     <h2 class="text-4xl font-bold">Fruit Burst</h2>
   </aside>
-  <div class="grid grid-cols-4 lg:grid-cols-6">
+  <div class="invisible lg:visible grid grid-cols-6">
     <p>Home</p>
     <p>About Us</p>
     <p>Shop</p>
@@ -656,8 +669,18 @@
     <p>Support</p>
     <p>My Account</p>
   </div>
+  <div class="block lg:hidden grid grid-cols-4 -mt-20">
+    <p>Home</p>
+    <p>About Us</p>
+    <p>Shop</p>
+    <p>All Fruits</p>
+  </div>
+  <div class="block lg:hidden flex justify-center gap-9 -mt-24">
+    <p>Support</p>
+    <p>My Account</p>
+  </div>
   <nav>
-    <div class="grid grid-flow-col gap-4">
+    <div class="grid grid-flow-col gap-4 -mt-14 lg:-mt-2">
       <a>
         <i class="fa-brands fa-twitter fa-2xl"></i>
       </a>
